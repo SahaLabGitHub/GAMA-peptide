@@ -14,7 +14,8 @@ Before running the scripts, ensure that all necessary Perl modules are installed
 Generate fragment input files
 Run the fragmentation script, for example:
 
-script_GAMA_peptide_Gly12.pl
+perl script_GAMA_peptide_Gly12.pl Gly_gama.com
+Gly_12_gama.com is the fragment input file , for Gly_12 peptide system
 
 
 This script generates the fragment input files for the Gly12 peptide.
@@ -22,7 +23,7 @@ This script generates the fragment input files for the Gly12 peptide.
 Add link hydrogen atoms
 After generating the fragment input files, use the following script to add hydrogen link atoms at the appropriate positions and generate capped fragments:
 
-script_add_link_H_Gly12.pl
+perl script_add_link_H_Gly12.pl
 
 Software Requirements
 
