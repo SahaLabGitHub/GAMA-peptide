@@ -4,7 +4,7 @@ This repository contains all required input files for peptide systems, along wit
 
 Overview:
 
-The fragmentation procedure is illustrated using the Gly12 peptide system as an example. The same workflow can be applied to other peptide systems with minimal modification. Users only need to identify the appropriate unbreakable groups for the target system. In the current implementation, fragmentation is performed by breaking the C–C bond between the α-carbon and the carbonyl carbon of the peptide backbone.
+The fragmentation procedure is illustrated using the Gly12 peptide system as an example. The same workflow can be applied to other peptide systems with minimal modification. Users only need to identify the appropriate unbreakable groups for the target system (which the user can do using gauss view 6 , to perse the atom indices , our code is integrated with gauss view so code easily recognize that). In the current implementation, fragmentation is performed by breaking the C–C bond between the α-carbon and the carbonyl carbon of the peptide backbone.
 
 Running the Fragmentation Code:
 
@@ -16,7 +16,7 @@ Run the fragmentation script, for example:
 
 perl script_GAMA_peptide_Gly12.pl Gly_gama.com
 
-Gly_12_gama.com is the fragment input file , for Gly_12 peptide system
+Gly_12_gama.com is the GAMA fragmentation input file that contain GAMA fragmentation parameters (i.e , box size and cutoff radius ) , for Gly_12 peptide system. Here box size = 2 angs and cutoff raius = 5 angs is set
 
 
 This script generates the fragment input files for the Gly12 peptide.
