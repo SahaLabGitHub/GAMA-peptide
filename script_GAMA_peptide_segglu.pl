@@ -324,9 +324,9 @@ foreach my $file (@ARGV){
   #say "box_y_length:"." ".abs $box_y_l;
   #say "box_z_length:"." ".abs $box_z_l;
   my $size = $box_size; # in Angstrom
-  my $x_partitions =floor($box_x_l/$size);
-  my $y_partitions = floor($box_y_l/$size);
-  my $z_partitions = floor($box_z_l/$size);
+  my $x_partitions =($box_x_l/$size);
+  my $y_partitions = ($box_y_l/$size);
+  my $z_partitions = ($box_z_l/$size);
   my $x_partition_size = ($box_x_l/$x_partitions);
   my $y_partition_size = ($box_y_l/$y_partitions);
   my $z_partition_size = ($box_z_l/$z_partitions);
@@ -680,12 +680,10 @@ my @groups = ();
 my @groupsAoA = ();
 my @carry = () ;
 my @final_gr_1 = (1,62,2,3,41,4,40,7,35,8,9,39,36,37,38) ;
-my @final_gr_2 =(6,5,10,49,11,14,42,48,43,15,44,45);
-my @final_gr_3 = (16,17,18,46,47);
-my @final_gr_4 = (12,13,19,55,20,54,23,50,51,24,53,52);
-my @final_gr_5 =(25,27,26,64);
-my @final_gr_6 =(21,22,28,60,29,59,32,57,56,33,58);
-my @final_gr_7 =(31,30,34,61,63);
+my @final_gr_2 =(6,5,10,49,11,14,42,48,43,15,44,45,16,17,18,46,47);
+my @final_gr_3 = (12,13,19,55,20,54,23,50,51,24,53,52,25,27,26,64);
+my @final_gr_4 =(21,22,28,60,29,59,32,57,56,33,58);
+my @final_gr_5 =(31,30,34,61,63);
 
 # Array of references to arrays
 my @final_group = (
@@ -694,8 +692,6 @@ my @final_group = (
     \@final_gr_3,
      \@final_gr_4,
     \@final_gr_5,
-   \@final_gr_6 ,
-  \@final_gr_7,
 ); 
 
 for my $c (0..$#final_group) {
