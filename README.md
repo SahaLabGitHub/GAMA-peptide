@@ -22,7 +22,7 @@ perl script_GAMA_peptide_Gly12.pl Gly_12_gama.com
 
 Here, Gly_12_gama.com is the GAMA fragmentation input file containing the fragmentation parameters (box size and cutoff radius) for the Gly₁₂ peptide. In this example, box size B = 2 Å and cutoff radius R = 5 Å are used.
 
-After execution, an output file named Gly_12_gama_B2_R5.log is generated, which contains detailed fragmentation information. For the Gly₁₂ system, the code produces 94 fragment input files, named gama_high_1.gjf through gama_high_94.gjf.
+After execution, an output file named Gly_12_gama_B2_R5.log is generated, which contains detailed fragmentation information. For the Gly₁₂ system, the code produces 84 fragment input files, named gama_high_1.gjf through gama_high_84.gjf.
 
 Adding Link Hydrogen Atoms
 
@@ -49,7 +49,7 @@ perl script_add_link_H_Gly12.pl
 
 Obtaining Total Fragment Energies
 
-After generating the capped fragment input files, perform quantum chemical calculations using the provided HPC submission script (g16_array.sbatch). This produces fragment output files (gama_high_1.log to gama_high_94.log).
+After generating the capped fragment input files, perform quantum chemical calculations using the provided HPC submission script (g16_array.sbatch). This produces fragment output files (gama_high_1.log to gama_high_84.log).
 
 The total energy is obtained by multiplying each fragment energy by its corresponding coefficient and summing over all fragments.Generalization to Other Peptides , information of coefficients can be obtained from Gly12_gama_B2_R5.log 
 
