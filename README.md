@@ -1,6 +1,6 @@
 GAMA-peptide
-
-This repository contains all required input files for peptide systems, along with Perl-based peptide fragmentation codes, demonstrated using two representative peptide systems. The Gly₁₂ peptide is used here solely as an illustrative example.
+Important note is that here we only provide partial code snippets not the full code , because this algorithm is under active development , so we dont want to share full code.
+This repository contains all required input files for peptide systems, along with  Perl-based peptide fragmentation codes(partial code snippets), demonstrated using two representative peptide systems. The Gly₁₂ peptide is used here solely as an illustrative example.
 
 Overview
 
