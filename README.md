@@ -55,6 +55,8 @@ The total energy is obtained by multiplying each fragment energy by its correspo
 
 While Gly₁₂ is used as a representative example, the entire workflow remains identical for other peptide systems. Only system-specific quantities—such as the number of fragments, number of broken C–C bonds, and link-H atom pair coordinates—will change. The core algorithm, fragmentation strategy, and energy accumulation procedure remain unchanged.
 
+Further detailes we don't provide beacsuse this algorithm is under active development
+
 Software Requirements
 
 Quantum chemical calculations: Gaussian 16
