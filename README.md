@@ -1,5 +1,5 @@
 GAMA-peptide
-Important note is that here we only provide partial code snippets not the full code , because this algorithm is under active development , so we dont want to share full code.
+Important note is that here we only provide partial code snippets not the full code , because this algorithm is under active development , so we dont want to share full code
 This repository contains all required input files for peptide systems, along with  Perl-based peptide fragmentation codes(partial code snippets), demonstrated using two representative peptide systems. The Gly₁₂ peptide is used here solely as an illustrative example.
 
 Overview
@@ -55,7 +55,7 @@ The total energy is obtained by multiplying each fragment energy by its correspo
 
 While Gly₁₂ is used as a representative example, the entire workflow remains identical for other peptide systems. Only system-specific quantities—such as the number of fragments, number of broken C–C bonds, and link-H atom pair coordinates—will change. The core algorithm, fragmentation strategy, and energy accumulation procedure remain unchanged.
 
-Further detailes we don't provide beacsuse this algorithm is under active development
+Further detailes we don't provide beacause this algorithm is under active development , so it is confidencial
 
 Software Requirements
 
