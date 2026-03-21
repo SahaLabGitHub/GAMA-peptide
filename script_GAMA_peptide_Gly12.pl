@@ -714,8 +714,7 @@ for my $c (0..$#final_group) {
       push (@syscheck, $current+1);
     }
   }
-  #print "No of Atoms in sys: $#syscheck\n";
-  print MYHANDLE "No of Atoms in sys: scalar(@syscheck)\n" if ($detailed_output==0);
+  
   my %seen5;
   foreach my $number (@syscheck) {
     next unless $seen5{$number}++;
